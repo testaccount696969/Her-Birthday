@@ -180,10 +180,10 @@ body {
 
 @media (max-width: 1080px) {
     .root {
-      margin-left: -4rem; 
+      margin-left: -3rem; 
   }
     .letter-black {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .input-cursor {
@@ -191,4 +191,7 @@ body {
         height: 20px;
         margin-left: 4px;
     }
+    .input-cursor-small {
+      margin-left: 2rem;
+  }
 }
