@@ -126,13 +126,13 @@ body {
     display: none;
     margin-top: 30vh;
     margin-left: -2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 .letter-black {
     font-family: Lucida Sans Typewriter,Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
     font-size: 3rem;
     color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 .letter-small {
     font-family: Lucida Sans Typewriter,Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
