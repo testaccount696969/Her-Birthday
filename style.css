@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen:700&display=swap");
-
 body {
   margin: 0;
   background-color: #171f30;
   overflow-x: hidden;
   overflow-y: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .content {
@@ -15,11 +20,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .content .loading {
   width: 100px;
   height: 50px;
   position: relative;
 }
+
 .content .loading p {
   top: 0;
   padding: 0;
@@ -30,6 +37,7 @@ body {
   font-size: 12px;
   letter-spacing: 1px;
 }
+
 @keyframes text {
   0% {
     letter-spacing: 1px;
@@ -52,6 +60,7 @@ body {
     transform: translateX(0px);
   }
 }
+
 .content .loading span {
   background-color: #5389a6;
   border-radius: 50px;
@@ -63,6 +72,7 @@ body {
   transform: translateX(64px);
   animation: loading 3.5s ease both infinite;
 }
+
 .content .loading span:before {
   position: absolute;
   content: "";
@@ -72,6 +82,7 @@ body {
   border-radius: inherit;
   animation: loading2 3.5s ease both infinite;
 }
+
 @keyframes loading {
   0% {
     width: 16px;
@@ -94,6 +105,7 @@ body {
     transform: translateX(0px);
   }
 }
+
 @keyframes loading2 {
   0% {
     transform: translateX(0px);
@@ -118,82 +130,109 @@ body {
 }
 
 .root {
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    padding: 3rem;
-    overflow-wrap: break-word;
-    display: none;
-    margin-top: 30vh;
-    margin-left: -2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 3rem;
+  overflow-wrap: break-word;
+  display: none;
+  margin-top: 30vh;
+  margin-left: -2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
+
 .letter-black {
-    font-family: Lucida Sans Typewriter,Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
-    font-size: 3rem;
-    color: white;
+  font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+  font-size: 3rem;
+  color: white;
 }
+
 .letter-small {
-    font-family: Lucida Sans Typewriter,Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
-    font-size: 1rem;
-    color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  font-family: Lucida Sans Typewriter, Lucida Console, monaco, Bitstream Vera Sans Mono, monospace;
+  font-size: 1rem;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 .input-cursor {
-    display: inline-block;
-    width: 3px;
-    height: 45px;
-    background-color: white;
-    margin-left: 8px;
-    animation: blink .6s linear infinite alternate;
+  display: inline-block;
+  width: 3px;
+  height: 45px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink .6s linear infinite alternate;
 }
+
 .input-cursor-small {
-    display: inline-block;
-    width: 2px;
-    height: 20px;
-    background-color: white;
-    margin-left: 4px;
-    animation: blink .6s linear infinite alternate;
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  margin-left: 4px;
+  animation: blink .6s linear infinite alternate;
 }
 
 @keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .spotify {
-    margin-top: 18vh;
-    margin-left: 20vw;
-    display: none;
+  margin-top: 18vh;
+  margin-left: 20vw;
+  display: none;
+}
+
+.message {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 12%;
+  left: 69%;
+  display: none;
+}
+
+.message span a{
+  text-decoration: underline;
+  color: white;
 }
 
 .post-scriptum {
-    width: 100%;
-    text-align: center;
-    display: none;
-    margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  display: none;
+  margin-top: 1rem;
 }
 
 @media (max-width: 1080px) {
-    .root {
-      margin-left: -3rem; 
+  .root {
+    margin-left: -3rem;
   }
-    .letter-black {
-        font-size: 1.5rem;
-    }
-    .letter-small {
-      font-size: .9rem;
+  .letter-black {
+    font-size: 1.5rem;
   }
-    .input-cursor {
-        width: 2px;
-        height: 20px;
-        margin-left: 4px;
-    }
-    .input-cursor-small {
-      margin-left: -.5rem;
+  .letter-small {
+    font-size: .9rem;
+  }
+  .input-cursor {
+    width: 2px;
+    height: 20px;
+    margin-left: 4px;
+  }
+  .input-cursor-small {
+    margin-left: -.5rem;
   }
 }
