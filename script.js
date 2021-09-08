@@ -50,7 +50,7 @@ $( document ).ready(async function() {
     await waitForMs(4200);
     await typeSentence("I hope you'll like it...❤️", $('.letter-black'));
     await waitForMs(4800);
-    await typeSentence("PS: You're boyfriend can be romantic too🥱", $('.post-scriptum .letter-small'));
+    await typeSentence("PS: Your boyfriend can be romantic too🥱", $('.post-scriptum .letter-small'));
   });
 
   $('.root').delay(75000).fadeOut();
