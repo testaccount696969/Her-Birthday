@@ -186,6 +186,7 @@ body {
         font-size: 1.5rem;
     }
     .letter-small {
+      margin-left: 1rem;
       font-size: .9rem;
   }
     .input-cursor {
@@ -194,6 +195,6 @@ body {
         margin-left: 4px;
     }
     .input-cursor-small {
-      margin-left: 1rem;
+      margin-left: -3rem;
   }
 }
