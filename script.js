@@ -4,7 +4,7 @@ $('.root').delay(10001).fadeIn();
 async function typeSentence(sentence, divRef) {
     const letters = sentence.split('');
 
-    for(let i = 0; i < letters.length; i++) {
+    for (let i = 0; i < letters.length; i++) {
         await waitForMs(250);
         $(divRef).append(letters[i]);
     }
@@ -14,7 +14,7 @@ async function typeSentence(sentence, divRef) {
 async function removeSentence(divRef, length) {
     const sentence = divRef.html();
     const letters = sentence.split('');
-    for(let i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) {
         await waitForMs(100);
         letters.pop();
         divRef.html(letters.join(''));
@@ -26,7 +26,7 @@ function waitForMs(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
-$( document ).ready(async function() {
+$(document).ready(async function () {
     await waitForMs(13000);
     await typeSentence("Hi...", $('.letter-black'));
     await waitForMs(1000);
@@ -51,9 +51,10 @@ $( document ).ready(async function() {
     await typeSentence("I hope you'll like it...❤️", $('.letter-black'));
     await waitForMs(4800);
     await typeSentence("PS: Your boyfriend can be romantic too🥱", $('.post-scriptum .letter-small'));
-  });
+});
 
-  $('.root').delay(75000).fadeOut();
-  $('.spotify').delay(85000).fadeIn();
-  $('.post-scriptum').delay(85000).fadeIn();
-  $('.input-cursor-small').delay(99000).fadeOut();
+$('.root').delay(75000).fadeOut();
+$('.spotify').delay(85000).fadeIn();
+$('.post-scriptum').delay(85000).fadeIn();
+$('.input-cursor-small').delay(99000).fadeOut();
+$('.message').delay(100000).fadeIn();
