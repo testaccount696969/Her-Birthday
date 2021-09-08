@@ -235,4 +235,7 @@ body {
   .input-cursor-small {
     margin-left: -.5rem;
   }
+  .message {
+    font-size: .9rem;
+  }
 }
