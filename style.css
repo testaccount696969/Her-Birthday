@@ -179,6 +179,9 @@ body {
 }
 
 @media (max-width: 1080px) {
+    .root {
+      margin-left: -4rem; 
+  }
     .letter-black {
         font-size: 1.8rem;
     }
