@@ -138,8 +138,6 @@ body {
   display: none;
   margin-top: 30vh;
   margin-left: -2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .letter-black {
@@ -222,10 +220,10 @@ body {
     margin-left: -3rem;
   }
   .letter-black {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .letter-small {
-    font-size: .9rem;
+    font-size: .8rem;
   }
   .input-cursor {
     width: 2px;
@@ -237,5 +235,6 @@ body {
   }
   .message {
     font-size: .9rem;
+    left: 65%;
   }
 }
