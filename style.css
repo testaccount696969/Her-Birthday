@@ -131,11 +131,15 @@ body {
     font-family: Lucida Sans Typewriter,Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
     font-size: 3rem;
     color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .letter-small {
     font-family: Lucida Sans Typewriter,Lucida Console, monaco, Bitstream Vera Sans Mono, monospace; 
     font-size: 1rem;
     color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .input-cursor {
     display: inline-block;
