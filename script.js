@@ -49,10 +49,11 @@ $( document ).ready(async function() {
     removeSentence($('.letter-black'), $('.letter-black').html().length);
     await waitForMs(4200);
     await typeSentence("I hope you'll like it...❤️", $('.letter-black'));
-    await waitForMs(5800);
+    await waitForMs(4800);
     await typeSentence("PS: You're boyfriend can be romantic too🥱", $('.post-scriptum .letter-small'));
   });
 
   $('.root').delay(75000).fadeOut();
   $('.spotify').delay(85000).fadeIn();
   $('.post-scriptum').delay(85000).fadeIn();
+  $('.input-cursor-small').delay(99000).fadeOut();
